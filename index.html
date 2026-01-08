@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Zaklina — Zaawansowane modele językowe</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero__content">
+        <p class="hero__eyebrow">Strona dedykowana dla Zakliny</p>
+        <h1>Jak działają zaawansowane modele językowe?</h1>
+        <p class="hero__lead">
+          To jednostronnicowe wprowadzenie wyjaśnia kluczowe mechanizmy, które stoją
+          za nowoczesnymi modelami językowymi — od tokenizacji, przez architekturę
+          Transformer, aż po uczenie na informacjach zwrotnych od ludzi.
+        </p>
+        <div class="hero__actions">
+          <a class="button" href="#modele">Zobacz wyjaśnienie</a>
+          <a class="button button--ghost" href="#linki">Przejdź do linków</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="modele" class="section">
+        <div class="section__header">
+          <h2>1. Tokenizacja i reprezentacja tekstu</h2>
+          <p>
+            Modele językowe nie operują bezpośrednio na słowach. Najpierw tekst jest
+            dzielony na tokeny — krótkie fragmenty słów lub całe wyrazy — a następnie
+            zamieniany na wektory liczbowe. To pozwala modelowi „zobaczyć” podobieństwa
+            pomiędzy znaczeniami.
+          </p>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <h3>Embeddingi</h3>
+            <p>
+              Każdy token zamieniany jest w gęsty wektor, który opisuje jego znaczenie
+              w kontekście innych tokenów.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Kontekst</h3>
+            <p>
+              Modele analizują sekwencję tokenów naraz, dlatego ważne jest utrzymanie
+              informacji o pozycjach i zależnościach w zdaniu.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--alt">
+        <div class="section__header">
+          <h2>2. Architektura Transformer</h2>
+          <p>
+            Zaawansowane modele językowe bazują na architekturze Transformer. Jej sercem
+            jest mechanizm uwagi (attention), który ocenia, które fragmenty tekstu są
+            kluczowe przy przewidywaniu kolejnych tokenów.
+          </p>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <h3>Self-attention</h3>
+            <p>
+              Model porównuje każdy token z pozostałymi, aby zdecydować, które relacje
+              są najważniejsze w danym kontekście.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Warstwy</h3>
+            <p>
+              Stos warstw attention i sieci feed-forward pozwala budować coraz głębsze
+              rozumienie znaczeń w zdaniu.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Skalowanie</h3>
+            <p>
+              Im większy model i więcej danych, tym lepsza jakość generowanych
+              odpowiedzi i zdolność do rozumienia niuansów.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section__header">
+          <h2>3. Uczenie i dostrajanie</h2>
+          <p>
+            Modele najpierw uczą się na ogromnych zbiorach tekstów, a następnie są
+            dostrajane, aby odpowiadały w sposób bezpieczny i pomocny.
+          </p>
+        </div>
+        <div class="grid">
+          <div>
+            <h3>Pre-trening</h3>
+            <p>
+              Model przewiduje brakujące tokeny w zdaniach, ucząc się składni, stylu i
+              faktów z wielu źródeł.
+            </p>
+          </div>
+          <div>
+            <h3>Fine-tuning</h3>
+            <p>
+              Dodatkowe uczenie na specjalistycznych danych sprawia, że model radzi
+              sobie lepiej w konkretnych zadaniach.
+            </p>
+          </div>
+          <div>
+            <h3>RLHF</h3>
+            <p>
+              Uczenie ze wzmocnieniem na podstawie ocen ludzi pomaga modelowi
+              generować odpowiedzi bardziej zgodne z oczekiwaniami użytkowników.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--alt" id="zaklina">
+        <div class="section__header">
+          <h2>Dla Zakliny</h2>
+          <p>
+            Zaklina, ta strona jest dedykowana Tobie — aby łatwo przypomnieć sobie,
+            jak działają zaawansowane modele językowe i gdzie znaleźć pogłębione
+            materiały. Wybierz linki poniżej i odkrywaj dalej.
+          </p>
+        </div>
+        <div class="quote">
+          <p>
+            „Najlepsze modele językowe to nie magia — to matematyka, dane i mnóstwo
+            inżynierii, które razem tworzą wrażenie rozmowy.”
+          </p>
+          <span>— notatka przygotowana specjalnie dla Zakliny</span>
+        </div>
+      </section>
+
+      <section class="section" id="linki">
+        <div class="section__header">
+          <h2>Przydatne linki</h2>
+          <p>
+            Poniżej znajdziesz materiały, które pogłębiają temat architektury i treningu
+            modeli językowych.
+          </p>
+        </div>
+        <ul class="link-list">
+          <li>
+            <a href="https://arxiv.org/abs/1706.03762" target="_blank" rel="noreferrer">
+              Attention Is All You Need — oryginalny artykuł o Transformerach
+            </a>
+          </li>
+          <li>
+            <a href="https://openai.com/research" target="_blank" rel="noreferrer">
+              OpenAI Research — aktualne badania nad modelami językowymi
+            </a>
+          </li>
+          <li>
+            <a href="https://huggingface.co/learn/nlp-course" target="_blank" rel="noreferrer">
+              Hugging Face NLP Course — praktyczny kurs o modelach językowych
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.tensorflow.org/text/tutorials/transformer"
+              target="_blank"
+              rel="noreferrer"
+            >
+              TensorFlow Transformer Tutorial — implementacja krok po kroku
+            </a>
+          </li>
+          <li>
+            <a href="https://jalammar.github.io/illustrated-transformer/" target="_blank" rel="noreferrer">
+              The Illustrated Transformer — wizualne wyjaśnienie mechanizmu uwagi
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Stworzone dla Zakliny • 2024</p>
+    </footer>
+  </body>
+</html>
